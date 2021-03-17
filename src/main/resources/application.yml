@@ -1,0 +1,17 @@
+rabbit:
+  queue : ashwarth-local-queue
+  exchange : ashwarth-local-exchange
+  routingKey : foo.bar.#
+  username : guest
+  password : guest
+  host :  localhost
+  portNumber : 5672
+
+spring:
+  rabbitmq:
+    host: localhost
+    username: guest
+    password: guest
+    port: 5672
+    template:
+      routing-key: foo.bar.#
